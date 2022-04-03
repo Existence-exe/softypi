@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+#box1 {
+    position: fixed;
+    height: 85vh;
+    width: 20vw;
+    background-color: lightblue;
+}
+
+#box2 {
+    position: fixed;
+    height: 85vh;
+    width: 80vw;
+    margin-left: 20vw;
+    background-color: darkblue;
+}
+
+#box3 {
+    position: fixed;
+    height: 15vh;
+    width: 100vw;
+    margin-top: 85vh;
+    background-color: rgb(89, 245, 89);
+}
