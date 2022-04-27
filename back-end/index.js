@@ -14,4 +14,4 @@ app.on('ready', function(){
     });
 
     win.loadFile('./front-end/index.html');
-});
+}); 
