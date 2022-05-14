@@ -8,25 +8,32 @@ body{
 }
 
 #box1 {
-    position: fixed;
+    display: flex;
     height: 88vh;
     width: 17vw;
+    resize: horizontal;
+    overflow: auto;
+    justify-content: center;
     background-color: lightblue;
 }
 
 #box2 {
-    position: fixed;
+    display: flex;
+    flex-grow: 3;
     height: 88vh;
     width: 83vw;
-    margin-left: 17vw;
+    overflow: auto;
+    resize: horizontal;
     background-color: darkblue;
 }
 
+#main_body{
+    display: flex;
+}
+
 #box3 {
-    position: fixed;
-    height: 12vh;
+    height: 9vh;
     width: 100vw;
-    margin-top: 88vh;
     background-color: white;
 }
 
@@ -35,8 +42,6 @@ body{
     border-radius: 1.5rem;
     height: 4vh;
     width: 8vw;
-    margin-top: 3vh;
-    margin-left: 4vw;
     align-items: center;
     display: flex;
     gap: 8%;
@@ -58,16 +63,23 @@ body{
     background-color: rgb(89, 245, 89);
     border: 1px solid white ;
     border-radius: 50%;
-    width: 3vw;
+    width: 2vw;
     display: flex;
-    height: 5vh;
+    height: 4vh;
     justify-content: center;
     align-items: center;
     margin-left: 50vw;
     margin-top: 3vh;
 }
 
-#play:hover {
-    width: 3.5vw;height: 5.5vh;margin-top: 2.75vh;margin-left: 49.75vw;
+
+#play_image {
+    width: 90%;
+    height: 90%;
 }
+
+#play:hover {
+    width: 2.5vw;height: 4.5vh;margin-top: 2.75vh;margin-left: 49.75vw;
+}
+
 
