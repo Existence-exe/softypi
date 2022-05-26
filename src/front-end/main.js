@@ -29,3 +29,22 @@ const sleep = (milliseconds) => {
     return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
 
+vol = document.getElementById('volume');
+vol_value = document.getElementById('volume-value');
+vol_value.innerHTML = vol.value;
+
+vol.oninput =  function () {
+    if(this.value <= 30) {
+        vol_value.src = 'http://localhost:3000/resource/resources/no_vol.png'
+    }else if (this.value <= 60 && this.value > 30) {
+        vol_value.src = 'http://localhost:3000/resource/resources/mid_vol.png'
+    }else if (this.value <=90 && this.value > 60) { 
+        vol_value.src = 'http://localhost:3000/resource/resources/full_vol.png'
+    }else {
+        vol_value.src = 'http://localhost:3000/resource/resources/mute.png'
+    }
+}
+
+function displayLib() {
+
+}

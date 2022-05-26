@@ -1,4 +1,3 @@
-
 //this is a comment
 const express = require('express');
 const PORT = 3000;
@@ -44,3 +43,7 @@ server.get('/resource/:b/:name', (req,res) => {
 
     res.sendFile(dir+'src/'+b+'/'+name)
 })
+
+
+
+

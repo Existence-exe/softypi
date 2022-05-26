@@ -13,7 +13,7 @@
 <body>
     <div id="main_body">
         <div id="box1">
-            <div id="thsi"><img src="http://localhost:3000/resource/resources/search.png">
+            <div id="thsi"><img src="http://localhost:3000/resource/resources/spotify-512.png">
                 <p>Softify</p>
             </div>
             <div id="container_1">
@@ -28,14 +28,14 @@
                     </div>
                 </div>
                 <div id="wrapper_1">
-                    <div id="your_library"><img
+                    <div id="your_library" onmouseover="displayLib()"><img
                             src="http://localhost:3000/resource/resources/library.png">
                         <p>Library</p>
                     </div>
-                </div>
-                <div id="wrap_lib" style="display: none;" >
-                    <p>libr</p>
-                </div>
+                    <div id="wrap_lib" style="display: none;">
+                        <p>libr</p>
+                    </div>
+                </div>     
             </div>
         </div>
         <div id="box2">
@@ -52,17 +52,20 @@
                 <div id="song">10</div>
                 <div id="song">11</div>
                 <div id="song">12</div>
-                <div id="song">13</div>
-                <div id="song">14</div>
-                <div id="song">15</div>
-                <div id="song">16</div>
-
             </div>
         </div>
     </div>
     <div id="box3">
-        <button onclick="fn()" id="play"><img id="play_image" src="http://localhost:3000/resource/resources/play_arrow_white_48dp.svg">
-        </button>
+        <img id="song-image"src="http://localhost:3000/resource/resources/song_img.jpg">
+        <p id="song-name">Mukanjyo</p>
+        <div id="play-wrapper">
+            <button onclick="fn()" id="play"><img id="play_image" src="http://localhost:3000/resource/resources/play_arrow_white_48dp.svg">
+            </button>
+        </div>
+        <div id="vol-wrapper">
+            <img id="volume-value" src="http://localhost:3000/resource/resources/full_vol.png"></img>
+            <input type="range" id="volume" name="vol" min="0" max="90">
+        </div>
     </div>
 </body>
 <script src="http://localhost:3000/resource/front-end/main.js"></script>

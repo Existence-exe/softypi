@@ -26,9 +26,7 @@ body{
     width: 15%;
 }
 
-#box2 {
-    display: flex;
-    flex-grow: 3;
+#box2 { 
     height: 88vh;
     width: 87vw;
     min-width: 70vw;
@@ -43,9 +41,10 @@ body{
 }
 
 #box3 {
-    height: 9vh;
+    height: 12vh;
     width: 100vw;
-    background-color: white;
+    background-color: black;
+    display: flex;
 }
 
 #thsi {
@@ -76,12 +75,12 @@ body{
     background-color: rgb(89, 245, 89);
     border: 1px solid white ;
     border-radius: 50%;
-    width: 2vw;
+    width: 3vw;
     display: flex;
-    height: 4vh;
+    height: 5vh;
     justify-content: center;
     align-items: center;
-    margin-left: 50vw;
+    margin-left: 35vw;
     margin-top: 3vh;
 }
 
@@ -91,9 +90,8 @@ body{
 }
 
 #play:hover {
-    width: 2.5vw;height: 4.5vh;margin-top: 2.75vh;margin-left: 49.75vw;
+    width: 3.5vw;height: 5.5vh;margin-top: 2.75vh;margin-left: 34.75vw;
 }
-
 
 #home {
     width: 80%;
@@ -165,7 +163,6 @@ body{
 
 #your_library:hover { 
     background-color: gray;
-    
 }
 
 #wrapper_1 {
@@ -174,16 +171,18 @@ body{
 }
 
 #wrapper_2 {
+    margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(4,15%);
-    grid-template-rows: repeat(4,15%);
-    height: 100%;
+    grid-template-rows: repeat(3,40%);
+    height: 40vh;
     width: 100%;
     gap: 10%;
 }
 
 #song {
-    width: 100%;
+    height: 10vh;
+    width: 10vw;
     background-color: steelblue;
     margin-top: 12.5%;
     margin-left: 5vw;
@@ -191,4 +190,50 @@ body{
     z-index: 1;
 }
 
-#your_library:hover #wrap_lib { display: flex; }
+#volume {
+    position: absolute;
+    margin-left: 24vw;
+    margin-top: 4.5vh;
+}
+
+
+#play-wrapper {
+    width: 50vw;
+
+}
+
+#vol-wrapper {
+    width: 40vw;
+    display: inline-flex;
+}
+
+
+#song-image {
+    display: inline;
+    height: 100%;
+    width: 7vw;
+}
+
+
+#song-name {
+    padding-top: 5vh;
+    padding-left: 2vw;
+    color: white;
+}
+
+#song-name:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5vh;
+}
+
+#volume {
+
+}
+
+#volume-value {
+    padding-top: 4vh;
+    margin-left: 21vw;
+    color: white;
+    width: 2vw;
+    height: 2vw;
+}

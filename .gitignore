@@ -1,8 +1,4 @@
 #To ignore node modules :
 node_modules
 
-#To ignore package and packagelock :
-package.json
-package-lock.json
-
  
